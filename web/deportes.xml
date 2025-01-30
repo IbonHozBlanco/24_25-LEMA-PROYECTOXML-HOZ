@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet href="deportes.xsl" type="text/xsl"?>
+<empresa>
+    <nombre>ZAPATONES GIJ</nombre>
+    <informacion>
+        <direccion>Calle Adurtza 16, VITORIA-GASTEIZ,ESPAÑA</direccion>
+        <telefono>+945670939</telefono>
+        <email>ZAPATONESGIJ@gmail.com</email>
+    </informacion>
+    <categorias>
+        <categoria id="1">
+            <nombre>Futbol</nombre>
+            <productos>
+                <producto id="Z101">
+                    <nombre>Balon de Futbol Nike</nombre>
+                    <descripcion>Balon oficial de futbol</descripcion>
+                    <precio moneda="EUR">30€</precio>
+                    <stock>50</stock>
+                    <imagen enlace="imagenes/Balon.jpg"/>
+                    <url>https://www.nike.com/es/w/hombre-futbol-zapatillas-1gdj0znik1zy7ok</url>
+                </producto>
+                <producto id="Z102">
+                    <nombre>Botas de Futbol Adidas</nombre>
+                    <descripcion>Botas de futbol profesionales para cesped artificial.</descripcion>
+                    <precio moneda="EUR">90€</precio>
+                    <stock>30</stock>
+                    <imagen enlace="imagenes/Botas.jpg"/>
+                    <url> https://www.nike.com/es/w?q=balonvst=balon</url>
+                </producto>
+            </productos>
+        </categoria>
+
+        <categoria id="2">
+            <nombre>Running</nombre>
+            <productos>
+                <producto id="Z201">
+                    <nombre>Zapatillas Running Asics</nombre>
+                    <descripcion>Zapatillas ligeras y comodas PROFESIONALES</descripcion>
+                    <precio moneda="EUR">75€</precio>
+                    <stock>40</stock>
+                    <imagen enlace="imagenes/Running.jpg"/>
+                    <url> https://www.elcorteingles.es/deportes/running/zapatillas/</url>
+                </producto>
+                <producto id="Z202">
+                    <nombre>Reloj Deportivo Garmin</nombre>
+                    <descripcion>Reloj con GPS y monitor de ritmo cardiaco.</descripcion>
+                    <precio moneda="EUR">200€</precio>
+                    <stock>15</stock>
+                    <imagen enlace="imagenes/R.DEP.jpg"/>
+                    <url> https://www.elcorteingles.es/deportes/electronica-deportiva/relojes-deportivos/</url>
+                </producto>
+            </productos>
+        </categoria>
+
+        <categoria id="3">
+            <nombre>Entrenamiento</nombre>
+            <productos>
+                <producto id="Z301">
+                    <nombre>Pesas Kettlebell</nombre>
+                    <descripcion>Pesas de alta calidad para entrenar.</descripcion>
+                    <precio moneda="EUR">45€</precio>
+                    <stock>60</stock>
+                    <imagen enlace="imagenes/Pesas.jpg"/>
+                    <url> https://www.decathlon.es/es/deportes/musculacion/kettlebells</url>
+                </producto>
+                <producto id="Z302">
+                    <nombre>Bandas de Resistencia</nombre>
+                    <descripcion>Bandas de resistencia para fortalecer todo el cuerpo.</descripcion>
+                    <precio moneda="EUR">20€</precio>
+                    <stock>100</stock>
+                    <imagen enlace="imagenes/Bandas.jpg"/>
+                    <url>https://www.decathlon.es/es/deportes/cross-training-y-entrenamiento-funcional/bandas-elasticas</url>
+                </producto>
+            </productos>
+        </categoria>
+    </categorias>
+
+    <promociones>
+        <promocion id="Z1">
+            <titulo>Descuento en Balones de Fútbol</titulo>
+            <descripcion>Obten un 20% de descuento en todos los balones de futbol.</descripcion>
+            <fechaInicio>2025-02-01</fechaInicio>
+            <fechaFin>2025-02-31</fechaFin>
+            <productosconDescuento>
+                <productoId>101</productoId>
+            </productosconDescuento>
+        </promocion>
+        <promocion id="Z2">
+            <titulo>Descuento en Zapatillas Running</titulo>
+            <descripcion>Compra 2 pares de zapatillas para correr y obtén un 10% de descuento.</descripcion>
+            <fechaInicio>2025-02-10</fechaInicio>
+            <fechaFin>2025-02-25</fechaFin>
+            <productosconDescuento>
+                <productoId id="201"></productoId>
+                <productoId id="202"></productoId>
+            </productosconDescuento>
+        </promocion>
+    </promociones>
+</empresa>
