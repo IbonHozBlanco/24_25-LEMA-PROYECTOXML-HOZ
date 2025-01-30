@@ -1,0 +1,28 @@
+<!ELEMENT empresa (nombre,informacion,categorias,promociones+)>
+<!ELEMENT nombre (#PCDATA)>
+<!ELEMENT informacion (direccion+,telefono,email)>
+<!ELEMENT direccion (#PCDATA)>
+<!ELEMENT telefono (#PCDATA)>
+<!ELEMENT email (#PCDATA)>
+<!ELEMENT categorias (categoria+)>
+<!ELEMENT categoria (nombre,productos)>
+<!ATTLIST categoria id NMTOKEN #REQUIRED>
+<!ELEMENT productos (producto+)>
+<!ELEMENT producto (nombre,descripcion?,precio,stock,imagen?,url+)>
+<!ATTLIST producto id NMTOKEN #REQUIRED>
+<!ELEMENT descripcion (#PCDATA)>
+<!ELEMENT precio (#PCDATA)>
+<!ATTLIST precio moneda NMTOKEN #FIXED "EUR">
+<!ELEMENT stock (#PCDATA)>
+<!ELEMENT imagen EMPTY>
+<!ATTLIST imagen enlace CDATA #REQUIRED>
+<!ELEMENT url (#PCDATA)>
+<!ELEMENT promociones (promocion*)>
+<!ELEMENT promocion (titulo,descripcion?,fechaInicio?,fechaFin?,productosconDescuento)>
+<!ATTLIST promocion id NMTOKEN #REQUIRED>
+<!ELEMENT titulo (#PCDATA)>
+<!ELEMENT fechaInicio (#PCDATA)>
+<!ELEMENT fechaFin (#PCDATA)>
+<!ELEMENT productosconDescuento (productoId+)>
+<!ELEMENT productoId (#PCDATA)>
+<!ATTLIST productoId id NMTOKEN #IMPLIED>
